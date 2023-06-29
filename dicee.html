@@ -5,29 +5,41 @@
     <title>Dicee</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-
+    <style>
+      button{
+        background-color: transparent;
+      }
+      button:hover h1{
+        color:red;
+      }
+    </style>
   </head>
   <body>
 
     <div class="container">
-      <h1>Refresh Me</h1>
-
+      <button style="border: 0;" onclick="clickMe()">
+        <h1>Click Me</h1>
+      </button>
+      <br>
       <div class="dice">
         <p>Player 1</p>
-        <img class="img1" src="">
+        <img class="img1" src="./images/dice6.png">
       </div>
 
       <div class="dice">
         <p>Player 2</p>
-        <img class="img2" src="">
+        <img class="img2" src="./images/dice6.png">
       </div>
-
+      <br>
+      <h1 class="winner" style="font-size:4rem;"></h1>
     </div>
-
+   
 
   </body>
 
   <footer>
-    www 🎲 App Brewery 🎲 com
+    <a href="https://www.linkedin.com/in/saksham-gupta-b990b0190/" style="color: white;">Made by: Saksham Gupta</a>
   </footer>
+
+  <script src="./index.js"></script>
 </html>
